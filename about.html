@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Explorer - About</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+
+    <!-- NAVBAR -->
+    <nav class="bg-indigo-600 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold">📚 Book Explorer</div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="hover:text-indigo-200">Home</a>
+                    <a href="favorites.html" class="hover:text-indigo-200">Favorites</a>
+                    <a href="about.html" class="text-indigo-200 font-semibold underline">About</a>
+                </div>
+                <button id="mobileMenuBtn" class="md:hidden">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <div id="mobileMenu" class="hidden md:hidden mt-4 space-y-2">
+                <a href="index.html" class="block hover:text-indigo-200">Home</a>
+                <a href="favorites.html" class="block hover:text-indigo-200">Favorites</a>
+                <a href="about.html" class="block hover:text-indigo-200">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <section class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-2">About Book Explorer</h1>
+            <p class="text-xl">Learn more about this project</p>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main class="container mx-auto px-4 py-16 max-w-4xl">
+
+        <!-- About the App -->
+        <section class="bg-white rounded-2xl shadow-md p-8 mb-10">
+            <h2 class="text-2xl font-bold text-indigo-600 mb-4">📖 What is Book Explorer?</h2>
+            <p class="text-gray-600 leading-relaxed">
+                Book Explorer is a responsive, interactive web application built as part of the
+                Frontend Phase 1 Capstone project. It lets users browse thousands of books,
+                search by title, and save their favorites — all powered by the Open Library API.
+            </p>
+        </section>
+
+        <!-- Features -->
+        <section class="bg-white rounded-2xl shadow-md p-8 mb-10">
+            <h2 class="text-2xl font-bold text-indigo-600 mb-6">✨ Features</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="flex items-start space-x-4">
+                    <span class="text-3xl">🔍</span>
+                    <div>
+                        <h3 class="font-semibold text-gray-800">Search Books</h3>
+                        <p class="text-gray-500 text-sm">Search by title using the Open Library API in real time.</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                    <span class="text-3xl">❤️</span>
+                    <div>
+                        <h3 class="font-semibold text-gray-800">Save Favorites</h3>
+                        <p class="text-gray-500 text-sm">Add or remove books from your personal favorites list.</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                    <span class="text-3xl">💾</span>
+                    <div>
+                        <h3 class="font-semibold text-gray-800">Persistent Storage</h3>
+                        <p class="text-gray-500 text-sm">Favorites are saved in localStorage and survive page refresh.</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                    <span class="text-3xl">📱</span>
+                    <div>
+                        <h3 class="font-semibold text-gray-800">Fully Responsive</h3>
+                        <p class="text-gray-500 text-sm">Works beautifully on mobile, tablet, and desktop.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack -->
+        <section class="bg-white rounded-2xl shadow-md p-8 mb-10">
+            <h2 class="text-2xl font-bold text-indigo-600 mb-6">🛠️ Tech Stack</h2>
+            <div class="flex flex-wrap gap-3">
+                <span class="bg-orange-100 text-orange-700 px-4 py-2 rounded-full font-medium">HTML5</span>
+                <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded-full font-medium">CSS3</span>
+                <span class="bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full font-medium">Tailwind CSS</span>
+                <span class="bg-yellow-100 text-yellow-700 px-4 py-2 rounded-full font-medium">JavaScript ES6+</span>
+                <span class="bg-green-100 text-green-700 px-4 py-2 rounded-full font-medium">Open Library API</span>
+                <span class="bg-purple-100 text-purple-700 px-4 py-2 rounded-full font-medium">localStorage</span>
+                <span class="bg-gray-100 text-gray-700 px-4 py-2 rounded-full font-medium">GitHub</span>
+            </div>
+        </section>
+
+        <!-- Developer -->
+        <section class="bg-white rounded-2xl shadow-md p-8 text-center">
+            <h2 class="text-2xl font-bold text-indigo-600 mb-4">👩‍💻 Developer</h2>
+            <div class="w-20 h-20 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4 text-4xl">
+                🧑‍💻
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-1">Theresie W.</h3>
+            <p class="text-gray-500 mb-4">Frontend Developer — Phase 1 Capstone</p>
+            <a href="https://github.com/theresiew/Phase-One-Capstone-Project"
+               target="_blank"
+               class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg inline-block transition">
+                View on GitHub
+            </a>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-800 text-white mt-20">
+        <div class="container mx-auto px-4 py-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Book Explorer</h3>
+                    <p class="text-gray-400">Your gateway to discovering amazing books.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="favorites.html" class="text-gray-400 hover:text-white">Favorites</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Connect</h3>
+                    <p class="text-gray-400">Powered by Open Library API</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-4 text-center text-gray-400">
+                <p>&copy; 2025 Book Explorer. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobileMenuBtn').addEventListener('click', function () {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
