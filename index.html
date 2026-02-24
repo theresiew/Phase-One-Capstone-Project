@@ -8,7 +8,6 @@
 </head>
 <body class="bg-gray-50">
 
-    <!-- NAVBAR -->
     <nav class="bg-indigo-600 text-white shadow-lg">
         <div class="container mx-auto px-4 py-4">
             <div class="flex justify-between items-center">
@@ -24,7 +23,7 @@
                     </svg>
                 </button>
             </div>
-            <!-- Mobile Menu -->
+          
             <div id="mobileMenu" class="hidden md:hidden mt-4 space-y-2">
                 <a href="index.html" class="block hover:text-indigo-200">Home</a>
                 <a href="favorites.html" class="block hover:text-indigo-200">Favorites</a>
@@ -33,7 +32,6 @@
         </div>
     </nav>
 
-    <!-- HERO SECTION -->
     <section class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-20">
         <div class="container mx-auto px-4 text-center">
             <h1 class="text-4xl md:text-6xl font-bold mb-4">Discover Your Next Great Read</h1>
@@ -54,29 +52,24 @@
         </div>
     </section>
 
-    <!-- BOOK GRID -->
     <main class="container mx-auto px-4 py-12">
         <h2 class="text-3xl font-bold mb-8 text-gray-800">Popular Books</h2>
 
-        <!-- Grid - Exercise 1.2 -->
         <div id="booksGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            <!-- Books will be loaded here by JavaScript -->
+            
         </div>
 
-        <!-- Loading Spinner -->
         <div id="loading" class="text-center py-20">
             <div class="text-5xl mb-4">📚</div>
             <p class="text-gray-500 text-lg">Loading books...</p>
         </div>
 
-        <!-- No Results -->
         <div id="noResults" class="hidden text-center py-20">
             <div class="text-5xl mb-4">🔍</div>
             <p class="text-gray-500 text-lg">No books found. Try a different search!</p>
         </div>
     </main>
 
-    <!-- FOOTER -->
     <footer class="bg-gray-800 text-white mt-20">
         <div class="container mx-auto px-4 py-8">
             <div class="grid md:grid-cols-3 gap-8">
@@ -107,7 +100,6 @@
     import { fetchBooks, searchBooks } from './js/fetchBooks.js';
     import { addFavorite, isFavorite } from './js/favorites.js';
 
-    // Mobile menu toggle
     document.getElementById('mobileMenuBtn').addEventListener('click', function () {
         document.getElementById('mobileMenu').classList.toggle('hidden');
     });
@@ -167,7 +159,6 @@
         }
     };
 
-    // Search button click
     document.getElementById('searchBtn').addEventListener('click', async () => {
         const query = document.getElementById('searchInput').value.trim();
         if (!query) return;
@@ -181,7 +172,6 @@
         }
     });
 
-    // Search on Enter key
     document.getElementById('searchInput').addEventListener('keypress', async (e) => {
         if (e.key === 'Enter') {
             const query = e.target.value.trim();
@@ -196,8 +186,7 @@
             }
         }
     });
-
-    // Load default books on page load
+    
     async function init() {
         showLoading();
         try {

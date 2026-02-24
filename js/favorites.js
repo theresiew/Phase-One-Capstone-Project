@@ -1,6 +1,4 @@
-// ========================================
-// FAVORITES MODULE - favorites.js
-// ========================================
+
 
 const STORAGE_KEY = 'bookExplorerFavorites';
 

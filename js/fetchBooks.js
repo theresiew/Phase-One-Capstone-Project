@@ -1,7 +1,4 @@
-// ========================================
-// FETCH BOOKS MODULE - fetchBooks.js
-// Lab 3: Async JavaScript & API Integration
-// ========================================
+
 
 const BASE_URL = 'https://openlibrary.org';
 
