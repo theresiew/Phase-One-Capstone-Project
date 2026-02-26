@@ -4,7 +4,7 @@ const BASE_URL = 'https://openlibrary.org';
 
 export async function fetchBooks(query = 'javascript') {
     try {
-        const response = await fetch(`${BASE_URL}/search.json?q=${encodeURIComponent(query)}&limit=12`);
+        const response = await fetch(`${BASE_URL}/search.json?q=${encodeURIComponent(query)}&limit=8`);
         
         if (!response.ok) {
             throw new Error(`API Error: ${response.status}`);
